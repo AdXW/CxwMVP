@@ -1,10 +1,11 @@
-package com.android.cxwmvp;
+package com.android.cxwmvp.test;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.cxwmvp.mvp.base.BaseActivity;
+import com.android.cxwmvp.R;
+import com.android.cxwmvp.activity.BaseActivity;
 import com.android.cxwmvp.test.presenter.BookPresenter;
 import com.android.cxwmvp.test.view.BookListView;
 
@@ -27,7 +28,6 @@ public class MainActivity extends BaseActivity implements BookListView {
 	// button 点击事件调用方法
 	public void getData(View view) {
 		System.out.println("第一步点击");
-		progressDialog.show();
 		mBookPresenter.loadBooks();
 	}
 

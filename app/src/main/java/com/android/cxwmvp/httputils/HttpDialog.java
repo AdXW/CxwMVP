@@ -1,4 +1,4 @@
-package com.android.cxwmvp.http;
+package com.android.cxwmvp.httputils;
 /*
  * @创建者     xianwei
  * @创建时间   2018/4/17

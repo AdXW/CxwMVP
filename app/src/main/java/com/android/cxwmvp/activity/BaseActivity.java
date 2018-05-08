@@ -1,4 +1,4 @@
-package com.android.cxwmvp.mvp.base;
+package com.android.cxwmvp.activity;
 /*
  * @创建者     xw_12138
  * @创建时间   2018/5/7

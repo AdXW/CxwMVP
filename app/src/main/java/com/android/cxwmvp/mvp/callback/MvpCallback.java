@@ -5,11 +5,11 @@ package com.android.cxwmvp.mvp.callback;
  * @描述       
  */
 
-public interface MvpCallback {
+public interface MvpCallback<T> {
 	/**
 	 * 数据请求成功
 	 */
-	void onSuccess(String data);
+	void onSuccess(T data);
 
 	/**
 	 * 数据请求失败

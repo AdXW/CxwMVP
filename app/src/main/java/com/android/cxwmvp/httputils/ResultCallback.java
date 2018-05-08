@@ -1,4 +1,4 @@
-package com.android.cxwmvp.http;
+package com.android.cxwmvp.httputils;
 /*
  * @创建者     xw_12138
  * @创建时间   2018/5/7
@@ -9,10 +9,16 @@ import android.text.TextUtils;
 
 import com.lzy.okgo.callback.StringCallback;
 import com.lzy.okgo.model.Response;
+import com.lzy.okgo.request.base.Request;
 
 public abstract class ResultCallback extends StringCallback {
 
-	public ResultCallback() {
+	protected ResultCallback() {
+	}
+
+	@Override
+	public void onStart(Request<String, ? extends Request> request) {
+		onRequestToStart();
 	}
 
 	@Override
@@ -35,7 +41,6 @@ public abstract class ResultCallback extends StringCallback {
 		}
 	}
 
-
 	/**
 	 * 请求成功回调
 	 *
@@ -47,4 +52,10 @@ public abstract class ResultCallback extends StringCallback {
 	 * 请求失败回调
 	 */
 	public abstract void onResponseFailed(int code, String msg);
+
+	public void onRequestToStart() {
+
+	}
+
+
 }

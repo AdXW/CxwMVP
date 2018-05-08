@@ -1,4 +1,4 @@
-package com.android.cxwmvp;
+package com.android.cxwmvp.application;
 /*
  * @创建者     xw_12138
  * @创建时间   2018/5/7
