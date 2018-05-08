@@ -29,6 +29,7 @@ public class MainActivity extends BaseActivity implements BookListView {
 	public void getData(View view) {
 		System.out.println("第一步点击");
 		mBookPresenter.loadBooks();
+
 	}
 
 	@Override
